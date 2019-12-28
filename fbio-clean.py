@@ -5,7 +5,7 @@ import cv2
 import os
 # read the user name to creeate folder and picture
 with open("user.txt") as myfile:
-    username = str.strip(myfile.readline())
+    username = myfile.readline().strip()
 
 output_dir = f"images/{username}"
 if not os.path.exists(output_dir):
